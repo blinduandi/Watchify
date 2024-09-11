@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Watchify.Views.LoginPage">
+
+    <!-- Gradient Background -->
+    <Grid BackgroundColor="#69232A">
+        <!-- Adding radial gradient -->
+        <Grid.Background>
+            <RadialGradientBrush Radius="1.5">
+                <GradientStop Color="#551024" Offset="0.01" />
+                <GradientStop Color="#2C070C" Offset="1.0" />
+            </RadialGradientBrush>
+        </Grid.Background>
+
+        <!-- Main Content -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Movie Poster Images -->
+        <StackLayout Grid.Row="0" Padding="20" VerticalOptions="Start" HorizontalOptions="Center">
+            <Grid ColumnSpacing="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+
+                <Image Grid.Column="0" Source="i_hate_1.png" WidthRequest="120" HeightRequest="250"/>
+                <Image Grid.Column="1" Source="lady_bird_1.png" WidthRequest="120" HeightRequest="250"/>
+                <Image Grid.Column="2" Source="bones_n_all_1.png" WidthRequest="130" HeightRequest="250"/>
+            </Grid>
+        </StackLayout>
+
+        <!-- Username and Password Inputs -->
+        <StackLayout Padding="20" VerticalOptions="Center" HorizontalOptions="Center">
+            <Entry x:Name="emailEntry" Placeholder="Username" BackgroundColor="Transparent" TextColor="White" 
+                   PlaceholderColor="Gray" HeightRequest="50" HorizontalTextAlignment="Center" 
+                   Style="{StaticResource RoundedEntryStyle}"/>
+            <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True" BackgroundColor="Transparent" 
+                   TextColor="White" PlaceholderColor="Gray" HeightRequest="50" HorizontalTextAlignment="Center"
+                   Style="{StaticResource RoundedEntryStyle}"/>
+        </StackLayout>
+
+        <!-- Login Button -->
+        <StackLayout Padding="200" VerticalOptions="End" HorizontalOptions="Center">
+            
+            <Button Text="Log In" BackgroundColor="White" TextColor="#551024" CornerRadius="25" 
+                    HeightRequest="50" WidthRequest="200" FontAttributes="Bold"
+                    Clicked="OnLoginButtonClicked"/>
+            <Button Text="Google" BackgroundColor="White" TextColor="#551024" CornerRadius="25" 
+                    HeightRequest="50" WidthRequest="200" FontAttributes="Bold"
+                    Clicked="OnLoginGoogleButtonClicked"/>
+        </StackLayout>
+
+        <!-- Forgot Password Label -->
+        <StackLayout Padding="20" VerticalOptions="End" HorizontalOptions="Center">
+            <Label Text="Forgot password ?" TextColor="White" HorizontalTextAlignment="Center" />
+        </StackLayout>
+    </Grid>
+</ContentPage>

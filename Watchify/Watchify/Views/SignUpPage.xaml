@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Watchify.Views.SignUpPage"
+             >
+    
+    <Grid BackgroundColor="#69232A">
+        <Grid.Background>
+        <RadialGradientBrush Radius="1.5">
+            <GradientStop Color="#551024" Offset="0.01" />
+            <GradientStop Color="#2C070C" Offset="1.0" />
+        </RadialGradientBrush>
+    </Grid.Background>
+
+    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+
+            <!-- Create Account Title -->
+            <Label Text="CREATE" 
+                   FontSize="32"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="White" />
+            <Label Text="ACCOUNT"
+                   FontSize="32"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="White"
+                   Margin="0,-10,0,30" />
+
+            <!-- Email Address Entry -->
+            <Entry Placeholder="Email address" 
+                   x:Name="emailEntry"
+                   BackgroundColor="Transparent"
+                   PlaceholderColor="White"
+                   TextColor="White"
+                   HeightRequest="50"
+                   Margin="0,0,0,15"
+                   HorizontalOptions="FillAndExpand"
+                   Style="{StaticResource RoundedEntryStyle}" />
+
+            <!-- Username Entry -->
+            <Entry Placeholder="Username" 
+                   BackgroundColor="Transparent"
+                   x:Name="usernameEntry"
+                   PlaceholderColor="White"
+                   TextColor="White"
+                   HeightRequest="50"
+                   Margin="0,0,0,15"
+                   
+                   HorizontalOptions="FillAndExpand"
+                   Style="{StaticResource RoundedEntryStyle}" />
+
+            <!-- Phone Number Entry -->
+
+
+            <!-- Password Entry -->
+            <Entry Placeholder="Password"
+                   IsPassword="True"
+                   x:Name="passwordEntry"
+                   BackgroundColor="Transparent"
+                   PlaceholderColor="White"
+                   TextColor="White"
+                   HeightRequest="50"
+                   Margin="0,0,0,30"
+                   HorizontalOptions="FillAndExpand"
+                   Style="{StaticResource RoundedEntryStyle}"
+                   />
+
+            <!-- Join Us Button -->
+            <Button Text="Join us !"
+                    TextColor="#2C1F1F"
+                    FontAttributes="Bold"
+                    BackgroundColor="White"
+                    CornerRadius="25"
+                    HeightRequest="50"
+                    HorizontalOptions="FillAndExpand" 
+                    Clicked="OnSignUpButtonClicked"
+                    />
+
+            <!-- Sign In Link -->
+            <Label Text="Already have an account ?"
+                   FontSize="14"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,0" />
+            <Label Text="Sign In"
+                   FontSize="16"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+        </StackLayout>
+    </Grid>
+</ContentPage>
