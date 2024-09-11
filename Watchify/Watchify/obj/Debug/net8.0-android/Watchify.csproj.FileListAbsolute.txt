@@ -2099,3 +2099,4 @@ D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\stam
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\home.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\home.png

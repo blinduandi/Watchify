@@ -4,13 +4,17 @@ namespace Watchify.Views;
 
 public partial class SignUpPage : ContentPage
 {
-    private readonly FirebaseAuthClient _authClient;
+    private readonly FirebaseAuthClient _authClient = MauiProgram.CreateMauiApp().Services.GetService<FirebaseAuthClient>();
 
-    public SignUpPage(FirebaseAuthClient authClient)
+    public SignUpPage()
     {
-        _authClient = authClient;
         InitializeComponent();
         Shell.SetNavBarIsVisible(this, false);
+    }
+
+    private async void GoToSignIn(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("///signin");
     }
 
     private async void OnSignUpButtonClicked(object sender, EventArgs e)

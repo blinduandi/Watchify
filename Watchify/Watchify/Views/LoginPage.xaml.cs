@@ -5,15 +5,19 @@ namespace Watchify.Views;
 
 public partial class LoginPage : ContentPage
 {
-    private readonly FirebaseAuthClient _authClient;
-   // private readonly CurrentUserStore _currentUserStore;
+    private readonly FirebaseAuthClient _authClient = MauiProgram.CreateMauiApp().Services.GetService<FirebaseAuthClient>();
+    // private readonly CurrentUserStore _currentUserStore;
 
 
-    public LoginPage(FirebaseAuthClient authClient)
+    public LoginPage()
 	{
-        _authClient = authClient;
 		InitializeComponent();
         Shell.SetNavBarIsVisible(this, false);
+    }
+
+    private async void GoToSignUp(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("///signup");
     }
 
     //private async void OnLoginGoogleButtonClicked(object sender, EventArgs e)
@@ -55,8 +59,8 @@ public partial class LoginPage : ContentPage
             UserCredential userCredential = await _authClient.SignInWithEmailAndPasswordAsync(email, password);
 
             await DisplayAlert("Success", "Successfully signed in!", "Ok");
+            await Shell.Current.GoToAsync("///main");
 
-            // Navigate to a different page (adjust the route as needed)
             await Shell.Current.GoToAsync("//ReportBug");
         }
         catch (Exception ex)

@@ -10,9 +10,8 @@ namespace Watchify
         public App()
         {
             InitializeComponent();
-            var authClient = MauiProgram.CreateMauiApp().Services.GetService<FirebaseAuthClient>();
-            MainPage = new NavigationPage(new Watchify.Views.MainPage());
-            
+            MainPage = new AppShell();
+
         }
     }
 }

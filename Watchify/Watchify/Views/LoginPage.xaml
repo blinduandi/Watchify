@@ -52,6 +52,29 @@
             
         </StackLayout>
 
+
+        <Label Text="Do not have an account ?"
+                   FontSize="14"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,0" 
+                   Padding="120"
+                   VerticalOptions="End"
+               />
+                    <Label Text="Sign Up"
+                   FontSize="16"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Padding="90" 
+                   VerticalOptions="End">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer
+            Tapped="GoToSignUp" />
+            </Label.GestureRecognizers>
+        </Label>
+
+
         <!-- Forgot Password Label -->
         <StackLayout Padding="20" VerticalOptions="End" HorizontalOptions="Center">
             <Label Text="Forgot password ?" TextColor="White" HorizontalTextAlignment="Center" />

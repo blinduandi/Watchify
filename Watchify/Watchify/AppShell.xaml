@@ -8,15 +8,9 @@
     xmlns:views="clr-namespace:Watchify.Views"
     Shell.FlyoutBehavior="Disabled"
     Shell.NavBarIsVisible="false">
-    
-    <ShellContent
-        ContentTemplate="{DataTemplate views:MainPage}"
-        Route="MainPage" />
-    
-    <ShellContent
-        Title="Sign Up"
-        ContentTemplate="{DataTemplate signup:SignUpView}"
-        Route="SignUp" />
 
+    <ShellContent Route="signin" ContentTemplate="{DataTemplate views:LoginPage}" />
+    <ShellContent Route="signup" ContentTemplate="{DataTemplate views:SignUpPage}" />
+    <ShellContent Route="main" ContentTemplate="{DataTemplate views:MainPage}" />
 
 </Shell>
