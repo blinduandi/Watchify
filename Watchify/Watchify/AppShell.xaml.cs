@@ -11,6 +11,8 @@ namespace Watchify
             Routing.RegisterRoute("signin", typeof(LoginPage));
             Routing.RegisterRoute("signup", typeof(SignUpPage));
             Routing.RegisterRoute("main", typeof(Views.MainPage));
+            Routing.RegisterRoute("search", typeof(Views.SearchPage));
+
         }
     }
 }

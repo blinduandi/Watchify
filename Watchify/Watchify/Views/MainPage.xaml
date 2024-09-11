@@ -12,18 +12,113 @@
             </RadialGradientBrush>
         </Grid.Background>
 
-        <StackLayout BackgroundColor="AntiqueWhite" Grid.Row="0" Padding="15" VerticalOptions="End" HorizontalOptions="Center">
-            <Grid ColumnSpacing="10">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="100" />
-                    <ColumnDefinition Width="100" />
-                    <ColumnDefinition Width="100" />
-                </Grid.ColumnDefinitions>
+        <StackLayout Padding="10" BackgroundColor="#632222">
+            
+            <StackLayout Padding="0,10,0,30" Orientation="Horizontal">
+                <!-- Greeting Section -->
+                <Label Text="Hi, mikea" 
+                     FontSize="35" 
+                     FontAttributes="Bold" 
+                     TextColor="White" 
+                     Margin="0,10,0,10"
+                     HorizontalTextAlignment="Start"
+                     VerticalOptions="Center"/>
+                <ImageButton Source="home_icon.png" 
+                     HorizontalOptions="EndAndExpand" 
+                     VerticalOptions="Center" 
+                     HeightRequest="30" 
+                     WidthRequest="30"/>    
+            </StackLayout>
+            
 
-                <Image Grid.Column="0" Source="home.png" WidthRequest="40" HeightRequest="40"/>
-                <Image Grid.Column="1" Source="home.png" WidthRequest="40" HeightRequest="40"/>
-                <Image Grid.Column="2" Source="home.png" WidthRequest="40" HeightRequest="40"/>
-            </Grid>
+            <!-- New Movies Section -->
+            <StackLayout>
+                <Label Text="NEW MOVIES" 
+                   FontSize="18" 
+                   FontAttributes="Bold" 
+                   TextColor="White"/>
+                <ScrollView Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <!-- Sample Movie Posters -->
+                        <Image Source="lady_bird_1.png" HeightRequest="150" WidthRequest="100"/>
+                        <Image Source="lady_bird_1.png" HeightRequest="150" WidthRequest="100"/>
+                        <Image Source="lady_bird_1.png" HeightRequest="150" WidthRequest="100"/>
+                        <Image Source="lady_bird_1.png" HeightRequest="150" WidthRequest="100"/>
+                        <Image Source="lady_bird_1.png" HeightRequest="150" WidthRequest="100"/>
+                        <Image Source="lady_bird_1.png" HeightRequest="150" WidthRequest="100"/>
+
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+            <!-- By Category Section -->
+            <StackLayout Margin="0,20,0,0">
+                <Label Text="BY CATEGORY" 
+                   FontSize="18" 
+                   FontAttributes="Bold" 
+                   TextColor="White"/>
+                <ScrollView Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <!-- Sample Category Posters -->
+                        <Image Source="lady_bird_1.png" HeightRequest="150" WidthRequest="100"/>
+                        <Image Source="lady_bird_1.png" HeightRequest="150" WidthRequest="100"/>
+                        <Image Source="lady_bird_1.png" HeightRequest="150" WidthRequest="100"/>
+                        <Image Source="lady_bird_1.png" HeightRequest="150" WidthRequest="100"/>
+                        <Image Source="lady_bird_1.png" HeightRequest="150" WidthRequest="100"/>
+                        <Image Source="lady_bird_1.png" HeightRequest="150" WidthRequest="100"/>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+            <!-- Watched Later Section -->
+            <StackLayout Margin="0,20,0,0">
+                <Label Text="WATCHED LATER" 
+                   FontSize="18" 
+                   FontAttributes="Bold" 
+                   TextColor="White"/>
+                <ScrollView Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <!-- Sample Watched Later Posters -->
+                        <Image Source="lady_bird_1.png" HeightRequest="150" WidthRequest="100"/>
+                        <Image Source="lady_bird_1.png" HeightRequest="150" WidthRequest="100"/>
+                        <Image Source="lady_bird_1.png" HeightRequest="150" WidthRequest="100"/>
+                        <Image Source="lady_bird_1.png" HeightRequest="150" WidthRequest="100"/>
+                        <Image Source="lady_bird_1.png" HeightRequest="150" WidthRequest="100"/>
+                        <Image Source="lady_bird_1.png" HeightRequest="150" WidthRequest="100"/>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+        </StackLayout>
+
+        <!-- Bottom Navigation Bar -->
+        <StackLayout Orientation="Horizontal" 
+                 VerticalOptions="End" 
+                 HorizontalOptions="FillAndExpand" 
+                 HeightRequest="60" 
+                 BackgroundColor="#522222">
+            
+        
+            <ImageButton Source="home_icon.png" 
+                     HorizontalOptions="CenterAndExpand" 
+                     VerticalOptions="Center" 
+                     HeightRequest="30" 
+                     WidthRequest="30"/>
+            <ImageButton Source="home_icon.png" 
+                     HorizontalOptions="CenterAndExpand" 
+                     VerticalOptions="Center" 
+                     HeightRequest="30" 
+                     WidthRequest="30"/>
+            <ImageButton Source="home_icon.png" 
+                     HorizontalOptions="CenterAndExpand" 
+                     VerticalOptions="Center" 
+                     HeightRequest="30" 
+                     WidthRequest="30"/>
+            <ImageButton Source="home_icon.png" 
+                     HorizontalOptions="CenterAndExpand" 
+                     VerticalOptions="Center" 
+                     HeightRequest="30" 
+                     WidthRequest="30"/>
         </StackLayout>
 
     </Grid>

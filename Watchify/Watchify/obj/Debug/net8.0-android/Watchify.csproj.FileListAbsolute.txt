@@ -2098,5 +2098,15 @@ D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\stam
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
-D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\home.png
 D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\home.png
+D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\homeee.jpg
+D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\home.png
+D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\home_icon.png
+D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Bold.ttf
+D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-ExtraBold.ttf
+D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-ExtraLight.ttf
+D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Light.ttf
+D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Medium.ttf
+D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Regular.ttf
+D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-SemiBold.ttf
+D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Thin.ttf

@@ -16,8 +16,14 @@ namespace Watchify
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
                 {
-                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                    fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("SUSE-Bold.ttf", "SuseBold");
+                    fonts.AddFont("SUSE-ExtraBold.ttf", "SuseExtraBold");
+                    fonts.AddFont("SUSE-SemiBold.ttf", "SuseSemiBold");
+                    fonts.AddFont("SUSE-Medium.ttf", "SuseMedium");
+                    fonts.AddFont("SUSE-Regular.ttf", "SuseRegular");
+                    fonts.AddFont("SUSE-Thin.ttf", "SuseThin");
+                    fonts.AddFont("SUSE-Light.ttf", "SuseLight");
+                    fonts.AddFont("SUSE-ExtraLight.ttf", "SuseExtraLight");
                 });
 
 #if DEBUG

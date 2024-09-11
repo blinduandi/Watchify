@@ -35135,24 +35135,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\andib\\.nuget\\packages\\": {},
+    "C:\\Users\\caram\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Watchify\\Watchify\\Watchify\\Watchify\\Watchify.csproj",
+      "projectUniqueName": "D:\\Practica Tehnologica\\Watchify\\Watchify\\Watchify\\Watchify.csproj",
       "projectName": "Watchify",
-      "projectPath": "D:\\Watchify\\Watchify\\Watchify\\Watchify\\Watchify.csproj",
-      "packagesPath": "C:\\Users\\andib\\.nuget\\packages\\",
-      "outputPath": "D:\\Watchify\\Watchify\\Watchify\\Watchify\\obj\\",
+      "projectPath": "D:\\Practica Tehnologica\\Watchify\\Watchify\\Watchify\\Watchify.csproj",
+      "packagesPath": "C:\\Users\\caram\\.nuget\\packages\\",
+      "outputPath": "D:\\Practica Tehnologica\\Watchify\\Watchify\\Watchify\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\andib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\caram\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -35246,7 +35246,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       },
       "net8.0-ios17.5": {
         "targetAlias": "net8.0-ios",
@@ -35297,7 +35297,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       },
       "net8.0-maccatalyst17.5": {
         "targetAlias": "net8.0-maccatalyst",
@@ -35349,7 +35349,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       },
       "net8.0-windows10.0.19041": {
         "targetAlias": "net8.0-windows10.0.19041.0",
@@ -35400,7 +35400,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
