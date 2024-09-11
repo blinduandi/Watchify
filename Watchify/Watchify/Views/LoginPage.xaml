@@ -49,9 +49,7 @@
             <Button Text="Log In" BackgroundColor="White" TextColor="#551024" CornerRadius="25" 
                     HeightRequest="50" WidthRequest="200" FontAttributes="Bold"
                     Clicked="OnLoginButtonClicked"/>
-            <Button Text="Google" BackgroundColor="White" TextColor="#551024" CornerRadius="25" 
-                    HeightRequest="50" WidthRequest="200" FontAttributes="Bold"
-                    Clicked="OnLoginGoogleButtonClicked"/>
+            
         </StackLayout>
 
         <!-- Forgot Password Label -->
