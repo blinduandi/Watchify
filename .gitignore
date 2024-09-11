@@ -1,1 +1,63 @@
-.vs
+# Build Folders
+bin/
+obj/
+
+# User-specific files
+.vscode/
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+*.tlog
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+*.DS_Store
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Package Folders
+*.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Rider Specific
+.idea/
+
+# Visual Studio Code
+.vs/
+
+# Windows image file caches
+Thumbs.db
+
+# Xamarin/Mobile Specific
+*.apk
+*.ap_ # Android build intermediate files
+*.dex
+*.class
+*.jar
+*.apk
+*.aab
+
+# Android / iOS related
+*.env
+**/platforms/
+**/build/
+**/generated/
+**/local.properties
+build/
+gradle/
+gradlew
+gradlew.bat
+node_modules/
+npm-debug.log
+android/app/build/
+
+# Firebase-related
+google-services.json
+GoogleService-Info.plist
