@@ -13,7 +13,16 @@
             </RadialGradientBrush>
         </Grid.Background>
 
+<<<<<<< HEAD
 
+=======
+        <Button Text="Click Me"
+        TextColor="White"
+        HorizontalOptions="Center"
+        VerticalOptions="Center">
+            
+        </Button>
+>>>>>>> 55757c6e43026ba2ac7e7339ec6dc78f6ca63837
 
         <StackLayout Padding="10" BackgroundColor="#632222" >
 
