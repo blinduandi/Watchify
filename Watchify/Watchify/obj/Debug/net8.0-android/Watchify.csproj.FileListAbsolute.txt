@@ -2098,7 +2098,6 @@ D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\stam
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
-D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\home.png
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Bold.ttf
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-ExtraBold.ttf
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-ExtraLight.ttf
@@ -2120,3 +2119,24 @@ D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resi
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\swipe_google.png
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\top_gun_poster.png
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\house.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Bold.ttf
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-ExtraBold.ttf
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-ExtraLight.ttf
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Light.ttf
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Medium.ttf
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Regular.ttf
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-SemiBold.ttf
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Thin.ttf
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\acc_circle.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\avengers_poster.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\batman_poster.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\bullet_train_poster.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\house.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\joker_poster.avif
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\manage_acc.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\movie.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\salaar_poster.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\search.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\search_google.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\swipe_google.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\top_gun_poster.png
