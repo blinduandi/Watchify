@@ -2110,3 +2110,13 @@ D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resi
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Regular.ttf
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-SemiBold.ttf
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Thin.ttf
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Bold.ttf
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-ExtraBold.ttf
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-ExtraLight.ttf
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Light.ttf
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Medium.ttf
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Regular.ttf
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-SemiBold.ttf
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Thin.ttf
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\homeee.jpg
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\home_icon.png

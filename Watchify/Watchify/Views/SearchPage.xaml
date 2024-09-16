@@ -13,28 +13,7 @@
             </RadialGradientBrush>
         </Grid.Background>
 
-        <Button Text="Click Me"
-        TextColor="White"
-        HorizontalOptions="Center"
-        VerticalOptions="Center">
-            <Button.VisualStateGroups>
-                <VisualStateGroup x:Name="CommonStates">
-                    <VisualState x:Name="Normal">
-                        <VisualState.Setters>
-                            <!-- Semi-transparent background -->
-                            <Setter Property="BackgroundColor" Value="#80FF5733" />
-                            <!-- 50% opacity (80 in hex) -->
-                        </VisualState.Setters>
-                    </VisualState>
-                    <VisualState x:Name="Pressed">
-                        <VisualState.Setters>
-                            <!-- Change to fully opaque background when pressed -->
-                            <Setter Property="BackgroundColor" Value="#FF5733" />
-                        </VisualState.Setters>
-                    </VisualState>
-                </VisualStateGroup>
-            </Button.VisualStateGroups>
-        </Button>
+
 
         <StackLayout Padding="10" BackgroundColor="#632222" >
 
