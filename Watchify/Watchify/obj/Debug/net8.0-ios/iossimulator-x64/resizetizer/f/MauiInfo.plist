@@ -6,6 +6,14 @@
   <array>
 	<string>OpenSans-Regular.ttf</string>
 	<string>OpenSans-Semibold.ttf</string>
+	<string>SUSE-Bold.ttf</string>
+	<string>SUSE-ExtraBold.ttf</string>
+	<string>SUSE-ExtraLight.ttf</string>
+	<string>SUSE-Light.ttf</string>
+	<string>SUSE-Medium.ttf</string>
+	<string>SUSE-Regular.ttf</string>
+	<string>SUSE-SemiBold.ttf</string>
+	<string>SUSE-Thin.ttf</string>
   </array>
 
 </dict>

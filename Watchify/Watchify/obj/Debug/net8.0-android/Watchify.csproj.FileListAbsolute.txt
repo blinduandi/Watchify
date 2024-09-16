@@ -2133,3 +2133,16 @@ D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resi
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\top_gun_poster.png
 D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\house.png
 >>>>>>> 55757c6e43026ba2ac7e7339ec6dc78f6ca63837
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\acc_circle.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\avengers_poster.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\batman_poster.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\bullet_train_poster.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\house.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\joker_poster.avif
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\manage_acc.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\movie.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\salaar_poster.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\search.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\search_google.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\swipe_google.png
+D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\top_gun_poster.png
