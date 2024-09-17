@@ -9,8 +9,8 @@
     Shell.FlyoutBehavior="Disabled"
     Shell.NavBarIsVisible="false">
     
-    <ShellContent Route="signin" ContentTemplate="{DataTemplate views:LoginPage}" />
     <ShellContent Route="main" ContentTemplate="{DataTemplate views:MainPage}" />
+    <ShellContent Route="signin" ContentTemplate="{DataTemplate views:LoginPage}" />
     <ShellContent Route="search" ContentTemplate="{DataTemplate views:SearchPage}" />
     <ShellContent Route="signup" ContentTemplate="{DataTemplate views:SignUpPage}" />
     

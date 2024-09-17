@@ -33,7 +33,9 @@
                         HorizontalOptions="EndAndExpand" 
                         VerticalOptions="Center" 
                         HeightRequest="30" 
-                        WidthRequest="30"/>
+                        WidthRequest="30"
+                        Clicked="SearchClick"/>
+                    
                 </StackLayout>
                 <AbsoluteLayout>
                 <Frame x:Name="GradientCircle" 
@@ -117,23 +119,7 @@
                        FontAttributes="Bold" 
                        TextColor="White"/>
                     <ScrollView Orientation="Horizontal">
-                        <StackLayout Orientation="Horizontal" Spacing="10">
-                            <Button Text="Horror" BackgroundColor="black" TextColor="White" BorderColor="white" BorderWidth="0.5" HeightRequest="50"/>
-                            <Button Text="Comedy" BackgroundColor="black" TextColor="White" BorderColor="white" BorderWidth="0.5" HeightRequest="50"/>
-                            <Button Text="Fantasy" BackgroundColor="black" TextColor="White" BorderColor="white" BorderWidth="0.5" HeightRequest="50"/>
-                            <Button Text="Cartoons" BackgroundColor="black" TextColor="White" BorderColor="white" BorderWidth="0.5" HeightRequest="50"/>
-                            <Button Text="Sci-fi" BackgroundColor="black" TextColor="White" BorderColor="white" BorderWidth="0.5" HeightRequest="50"/>
-                            <Button Text="Documental" BackgroundColor="black" TextColor="White" BorderColor="white" BorderWidth="0.5" HeightRequest="50"/>
-                            <Button Text="History" BackgroundColor="black" TextColor="White" BorderColor="white" BorderWidth="0.5" HeightRequest="50"/>
-                            <Button Text="Criminal" BackgroundColor="black" TextColor="White" BorderColor="white" BorderWidth="0.5" HeightRequest="50"/>
-                            <Button Text="Detective" BackgroundColor="black" TextColor="White" BorderColor="white" BorderWidth="0.5" HeightRequest="50"/>
-                            <Button Text="Love" BackgroundColor="black" TextColor="White" BorderColor="white" BorderWidth="0.5" HeightRequest="50"/>
-                            <Button Text="Drama" BackgroundColor="black" TextColor="White" BorderColor="white" BorderWidth="0.5" HeightRequest="50"/>
-                            <Button Text="Musical" BackgroundColor="black" TextColor="White" BorderColor="white" BorderWidth="0.5" HeightRequest="50"/>
-                            <Button Text="Adventure" BackgroundColor="black" TextColor="White" BorderColor="white" BorderWidth="0.5" HeightRequest="50"/>
-                            <Button Text="War" BackgroundColor="black" TextColor="White" BorderColor="white" BorderWidth="0.5" HeightRequest="50"/>
-                            <Button Text="Fighting" BackgroundColor="black" TextColor="White" BorderColor="white" BorderWidth="0.5" HeightRequest="50"/>
-                            <Button Text="Family" BackgroundColor="black" TextColor="White" BorderColor="white" BorderWidth="0.5" HeightRequest="50"/>
+                        <StackLayout x:Name="genreStackLayout" Orientation="Horizontal" Spacing="10">
                         </StackLayout>
                     </ScrollView>
                 </StackLayout>

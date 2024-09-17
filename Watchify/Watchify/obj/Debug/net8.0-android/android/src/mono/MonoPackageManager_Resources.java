@@ -26,6 +26,7 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Expression.Interactions.dll",
 		"System.Windows.Interactivity.dll",
 		"Newtonsoft.Json.dll",
+		"RestSharp.dll",
 		"Xamarin.Android.Glide.dll",
 		"Xamarin.Android.Glide.Annotations.dll",
 		"Xamarin.Android.Glide.DiskLruCache.dll",

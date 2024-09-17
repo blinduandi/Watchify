@@ -61,7 +61,6 @@ public partial class LoginPage : ContentPage
             await DisplayAlert("Success", "Successfully signed in!", "Ok");
             await Shell.Current.GoToAsync("///main");
 
-            await Shell.Current.GoToAsync("//ReportBug");
         }
         catch (Exception ex)
         {

@@ -45,7 +45,7 @@ public partial class SignUpPage : ContentPage
             await DisplayAlert("Success", "Successfully signed up!", "Ok");
 
             // Navigate to a different page (adjust the route as needed)
-            await Shell.Current.GoToAsync("//SignIn");
+            await Shell.Current.GoToAsync("///signin");
         }
         catch (Exception ex)
         {
