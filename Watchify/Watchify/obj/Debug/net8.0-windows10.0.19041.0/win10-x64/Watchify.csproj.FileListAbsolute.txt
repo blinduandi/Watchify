@@ -1,9 +1,0 @@
-D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Watchify.csproj.AssemblyReference.cache
-D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauiimage.inputs
-D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauifont.inputs
-D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauisplash.inputs
-D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\mauimanifest.stamp
-D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xaml
-D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Platforms\Windows\App.xbf
-D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\XamlSaveStateFile.xml
-D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\Watchify.GeneratedMSBuildEditorConfig.editorconfig
