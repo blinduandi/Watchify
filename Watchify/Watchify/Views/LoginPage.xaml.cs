@@ -46,8 +46,8 @@ public partial class LoginPage : ContentPage
     {
         try
         {
-            string email = emailEntry.Text;  
-            string password = passwordEntry.Text;  
+            string email = emailEntry.Text;
+            string password = passwordEntry.Text;
 
             if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
             {
@@ -58,14 +58,17 @@ public partial class LoginPage : ContentPage
             // Authenticate with Firebase
             UserCredential userCredential = await _authClient.SignInWithEmailAndPasswordAsync(email, password);
 
+            // Save login state
+            await SecureStorage.SetAsync("userLoggedIn", "true");
+
             await DisplayAlert("Success", "Successfully signed in!", "Ok");
             await Shell.Current.GoToAsync("///main");
-
         }
         catch (Exception ex)
         {
             await DisplayAlert("Error", $"Failed to sign in: {ex.Message}", "Ok");
         }
     }
+
 
 }

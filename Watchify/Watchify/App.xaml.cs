@@ -12,6 +12,16 @@ namespace Watchify
             InitializeComponent();
             MainPage = new AppShell();
 
+            var isLoggedIn = SecureStorage.GetAsync("userLoggedIn").Result;
+
+            if (isLoggedIn == "true")
+            {
+                Shell.Current.GoToAsync("///main");
+            }
+            else
+            {
+                Shell.Current.GoToAsync("///signin"); 
+            }
         }
     }
 }
