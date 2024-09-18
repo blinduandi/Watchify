@@ -1097,14 +1097,6 @@ D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\mauisplash.stamp
 D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\mauifont.stamp
 D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\OpenSans-Regular.ttf
 D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\OpenSans-Semibold.ttf
-D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Bold.ttf
-D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-ExtraBold.ttf
-D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-ExtraLight.ttf
-D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Light.ttf
-D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Medium.ttf
-D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Regular.ttf
-D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-SemiBold.ttf
-D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\f\SUSE-Thin.ttf
 D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\house.png
 D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\joker_poster.avif
 D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\avengers_poster.png
