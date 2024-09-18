@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Watchify.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:signup="clr-namespace:Watchify.Pages"
+    xmlns:local="clr-namespace:Watchify"
+    xmlns:views="clr-namespace:Watchify.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.NavBarIsVisible="false">
+    
+    <ShellContent Route="main" ContentTemplate="{DataTemplate views:MainPage}" />
+    <ShellContent Route="signin" ContentTemplate="{DataTemplate views:LoginPage}" />
+    <ShellContent Route="search" ContentTemplate="{DataTemplate views:SearchPage}" />
+    <ShellContent Route="signup" ContentTemplate="{DataTemplate views:SignUpPage}" />
+    <ShellContent Route="list" ContentTemplate="{DataTemplate views:ListMovies}" />
+    <ShellContent Route="movie" ContentTemplate="{DataTemplate views:MoviePage}" />
+    <ShellContent Route="profile" ContentTemplate="{DataTemplate views:ProfilePage}" />
+    <ShellContent Route="recommandation" ContentTemplate="{DataTemplate views:Recommandation}" />
+    <ShellContent Route="watch" ContentTemplate="{DataTemplate views:WatchLaterPage}" />
+
+
+</Shell>
