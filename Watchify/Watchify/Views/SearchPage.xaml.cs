@@ -6,4 +6,8 @@ public partial class SearchPage : ContentPage
 	{
 		InitializeComponent();
 	}
+    private async void BackHome(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("..");
+    }
 }

@@ -20,7 +20,8 @@
                         HorizontalOptions="StartAndExpand" 
                         VerticalOptions="Center" 
                         HeightRequest="30" 
-                        WidthRequest="30"/>
+                        WidthRequest="30"
+                        Clicked="ProfilePage"/>
                     
                     <Label Text=".Watchify" 
                         FontSize="26" 
@@ -102,12 +103,12 @@
                             TextColor="DarkOrange"/>     
                     </StackLayout>
                     <ScrollView Orientation="Horizontal" >
-                        <StackLayout Orientation="Horizontal" Spacing="10">
-                            <Image Source="avengers_poster.png" HeightRequest="200" />
-                            <Image Source="batman_poster.png" HeightRequest="200" />
-                            <Image Source="salaar_poster.png" HeightRequest="200" />
-                            <Image Source="top_gun_poster.png" HeightRequest="200" />
-                            <Image Source="bullet_train_poster.png" HeightRequest="200" />
+                        <StackLayout Orientation="Horizontal" >
+                            <ImageButton Source="avengers_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePage"/>
+                            <ImageButton Source="batman_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePage"/>
+                            <ImageButton Source="salaar_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePage"/>
+                            <ImageButton Source="top_gun_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePage"/>
+                            <ImageButton Source="bullet_train_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePage"/>
                         </StackLayout>
                     </ScrollView>
                 </StackLayout>
