@@ -66,7 +66,6 @@ public partial class MainPage : ContentPage
         }
     }
 
-
     private async void AnimateCircle()
     {
         while (true)
@@ -81,5 +80,14 @@ public partial class MainPage : ContentPage
         await Shell.Current.GoToAsync("/search");
     }
 
+    private async void ProfilePage(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("/profile");
+    }
+
+    private async void MoviePage(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("/movie");
+    }
 
 }

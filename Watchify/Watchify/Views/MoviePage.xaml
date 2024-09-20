@@ -3,10 +3,208 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Watchify.Views.MoviePage"
              Title="MoviePage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid BackgroundColor="black">
+
+        
+        <Image x:Name="MoviePoster"
+               Source="the_batman.jpg"
+               Aspect="AspectFill"
+               Opacity="1"
+               VerticalOptions="Start"
+               HorizontalOptions="FillAndExpand" />
+
+        <ImageButton x:Name="GoBackButton"
+                 Source="back_google_ios.png"
+                 VerticalOptions="Start"
+                 HorizontalOptions="Start"
+                 HeightRequest="50"
+                 WidthRequest="50"
+                 Padding="10"
+                 Margin="5"
+            ZIndex="10"
+                 Clicked="GoBackHome"/>
+        
+        <ScrollView Scrolled="OnScrollViewScrolled" VerticalScrollBarVisibility="Never" Padding="10">
+            <StackLayout>
+                <StackLayout>
+                    <Label Text="The Batman" 
+                           FontSize="30"
+                           FontAttributes="Bold"
+                           Padding="0,300,0,30"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HorizontalTextAlignment="Center"/>
+                    
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="5">
+                        <Label Text="8.2" 
+                                FontSize="16"
+                                TextColor="Gold"
+                                FontAttributes="None"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Center"/>
+                        <Label Text="2014, Fantastic, Action" 
+                               FontSize="16"
+                               FontAttributes="None"
+                               Padding="0,0,0,0"
+                               HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </StackLayout>
+                    
+                    <Label Text="USA, 2 h 45 min, 18+" 
+                           FontSize="16"
+                           FontAttributes="None"
+                           Padding="0,0,0,40"
+                           HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+                
+                <StackLayout >
+                    <Label FontSize="16" >The Batman is a 2022 American superhero film based on the DC Comics character Batman. Directed by Matt Reeves from a screenplay ...</Label>
+                    <Button Text="See all details" 
+                            Padding="0,10,0,10"
+                            FontSize="16" 
+                            FontAttributes="Bold" 
+                            TextColor="DarkOrange" 
+                            BackgroundColor="Black"
+                            HorizontalOptions="Start"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" Padding="0,20,0,0">
+                        <Label Text="Trailer" 
+                            Padding="0,0,0,10"
+                            FontSize="20" 
+                            FontAttributes="Bold" 
+                            TextColor="White"/> 
+                        <Label Text="See all" 
+                            VerticalTextAlignment="Center"
+                            HorizontalOptions="EndAndExpand"
+                            Padding="0,0,0,10"
+                            FontSize="14" 
+                            FontAttributes="Bold" 
+                            TextColor="DarkOrange"/>
+                    </StackLayout>
+                    <ScrollView Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal" Spacing="10" Padding="0,0,0,40">
+                            <WebView x:Name="YouTubeWebView"
+                                     Source="https://www.youtube.com/embed/mqqft2x_Aa4"
+                                     WidthRequest="340"
+                                     HeightRequest="200"
+                                     HorizontalOptions="CenterAndExpand"
+                                     VerticalOptions="CenterAndExpand" />
+                            
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
+                <StackLayout Padding="0,0,0,40">
+                    <Label Text="Ratings" 
+                            Padding="0,0,0,10"
+                            FontSize="20" 
+                            FontAttributes="Bold" 
+                            TextColor="White"/>
+                    <StackLayout BackgroundColor="#1f1f1f" Orientation="Vertical" >
+                        <Label TextColor="#63f022" FontSize="60" FontAttributes="Bold" Margin="0,20,0,10" HorizontalOptions="Center">8.2</Label>
+                        <Label TextColor="Gray" FontSize="16" FontAttributes="None" HorizontalOptions="Center">512 836 reviews</Label>
+                        <Button Text="Rate this movie" TextColor="White" BackgroundColor="Red" CornerRadius="20" WidthRequest="160" Margin="0,20" FontSize="16"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Margin="0,0,0,20" Padding="0,0,0,40">
+                    
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="We recommend " 
+                                Padding="0,0,0,10"
+                                FontSize="20" 
+                                FontAttributes="Bold" 
+                                TextColor="White"/>
+                        <Label Text="See all" 
+                                VerticalTextAlignment="Center"
+                                HorizontalOptions="EndAndExpand"
+                                Padding="0,0,0,10"
+                                FontSize="14" 
+                                FontAttributes="Bold" 
+                                TextColor="DarkOrange"/>
+                    </StackLayout>
+                    
+                    <ScrollView Orientation="Horizontal" >
+                        <StackLayout Orientation="Horizontal" Spacing="10">
+                            <StackLayout Orientation="Vertical" Spacing="10">
+                                <Image Source="avengers_poster.png" HeightRequest="200" />
+                                <Label HorizontalOptions="Start" MaximumWidthRequest="100">Avengers 2. Age of Ultron</Label>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Vertical" Spacing="10">
+                                <Image Source="batman_poster.png" HeightRequest="200" />
+                                <Label HorizontalOptions="Start" MaximumWidthRequest="100">The Batman</Label>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Vertical" Spacing="10">
+                                <Image Source="salaar_poster.png" HeightRequest="200" />
+                                <Label HorizontalOptions="Start" MaximumWidthRequest="100">Salaar</Label>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Vertical" Spacing="10">
+                                <Image Source="top_gun_poster.png" HeightRequest="200" />
+                                <Label HorizontalOptions="Start" MaximumWidthRequest="100">Top Gun</Label>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Vertical" Spacing="10">
+                                <Image Source="bullet_train_poster.png" HeightRequest="200" />
+                                <Label HorizontalOptions="Start" MaximumWidthRequest="100">Bullet Train</Label>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Vertical" Spacing="10">
+                                <Image Source="avengers_poster.png" HeightRequest="200" />
+                                <Label HorizontalOptions="Start" MaximumWidthRequest="100">Avengers 2. Age of Ultron</Label>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Vertical" Spacing="10">
+                                <Image Source="batman_poster.png" HeightRequest="200" />
+                                <Label HorizontalOptions="Start" MaximumWidthRequest="100">The Batman</Label>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Vertical" Spacing="10">
+                                <Image Source="salaar_poster.png" HeightRequest="200" />
+                                <Label HorizontalOptions="Start" MaximumWidthRequest="100">Salaar</Label>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Vertical" Spacing="10">
+                                <Image Source="top_gun_poster.png" HeightRequest="200" />
+                                <Label HorizontalOptions="Start" MaximumWidthRequest="100">Top Gun</Label>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Vertical" Spacing="10">
+                                <Image Source="bullet_train_poster.png" HeightRequest="200" />
+                                <Label HorizontalOptions="Start" MaximumWidthRequest="100">Bullet Train</Label>
+                            </StackLayout>
+                        </StackLayout>
+                        
+                    </ScrollView>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+
+
+        <StackLayout Orientation="Horizontal" 
+                    VerticalOptions="End" 
+                    HorizontalOptions="FillAndExpand" 
+                    HeightRequest="60" 
+                    BackgroundColor="black">
+
+        <ImageButton Source="house.png" 
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="Center" 
+                HeightRequest="30" 
+                WidthRequest="30"/>
+        <ImageButton Source="swipe_google.png" 
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="Center" 
+                HeightRequest="30" 
+                WidthRequest="30"/> 
+        <ImageButton Source="manage_acc.png" 
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="Center" 
+                HeightRequest="30" 
+                WidthRequest="30"/>    
+        </StackLayout>
+    </Grid>
 </ContentPage>
