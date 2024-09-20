@@ -102,12 +102,12 @@
                             TextColor="DarkOrange"/>     
                     </StackLayout>
                     <ScrollView Orientation="Horizontal" >
-                        <StackLayout Orientation="Horizontal" Spacing="10">
-                            <Image Source="avengers_poster.png" HeightRequest="200" />
-                            <Image Source="batman_poster.png" HeightRequest="200" />
-                            <Image Source="salaar_poster.png" HeightRequest="200" />
-                            <Image Source="top_gun_poster.png" HeightRequest="200" />
-                            <Image Source="bullet_train_poster.png" HeightRequest="200" />
+                        <StackLayout Orientation="Horizontal" Spacing="5" x:Name="StackNew">
+                            <ImageButton Source="avengers_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="1"/>
+                            <ImageButton Source="batman_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="2"/>
+                            <ImageButton Source="salaar_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="4"/>
+                            <ImageButton Source="top_gun_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="5"/>
+                            <ImageButton Source="bullet_train_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="8"/>
                         </StackLayout>
                     </ScrollView>
                 </StackLayout>
@@ -141,12 +141,12 @@
                             TextColor="DarkOrange"/>
                     </StackLayout>
                     <ScrollView Orientation="Horizontal" >
-                        <StackLayout Orientation="Horizontal" Spacing="10">
-                            <Image Source="avengers_poster.png" HeightRequest="200" />
-                            <Image Source="batman_poster.png" HeightRequest="200" />
-                            <Image Source="salaar_poster.png" HeightRequest="200" />
-                            <Image Source="top_gun_poster.png" HeightRequest="200" />
-                            <Image Source="bullet_train_poster.png" HeightRequest="200" />
+                        <StackLayout Orientation="Horizontal" Spacing="5" x:Name="StackTrending" >
+                            <ImageButton Source="avengers_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="1"/>
+                            <ImageButton Source="batman_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="2"/>
+                            <ImageButton Source="salaar_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="4"/>
+                            <ImageButton Source="top_gun_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="5"/>
+                            <ImageButton Source="bullet_train_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="8"/>
                         </StackLayout>
                     </ScrollView>
                 </StackLayout>
@@ -168,12 +168,12 @@
                             TextColor="DarkOrange"/>
                     </StackLayout>
                     <ScrollView Orientation="Horizontal" >
-                        <StackLayout Orientation="Horizontal" Spacing="10">
-                            <Image Source="avengers_poster.png" HeightRequest="200" />
-                            <Image Source="batman_poster.png" HeightRequest="200" />
-                            <Image Source="salaar_poster.png" HeightRequest="200" />
-                            <Image Source="top_gun_poster.png" HeightRequest="200" />
-                            <Image Source="bullet_train_poster.png" HeightRequest="200" />
+                        <StackLayout Orientation="Horizontal" Spacing="5" >
+                            <ImageButton Source="avengers_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="1"/>
+                            <ImageButton Source="batman_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="2"/>
+                            <ImageButton Source="salaar_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="4"/>
+                            <ImageButton Source="top_gun_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="5"/>
+                            <ImageButton Source="bullet_train_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="8"/>
                         </StackLayout>
                     </ScrollView>
                 </StackLayout>
@@ -194,17 +194,17 @@
                                 TextColor="DarkOrange"/>
                         </StackLayout>
                         <ScrollView Orientation="Horizontal" >
-                            <StackLayout Orientation="Horizontal" Spacing="10">
-                                <Image Source="avengers_poster.png" HeightRequest="200" />
-                                <Image Source="batman_poster.png" HeightRequest="200" />
-                                <Image Source="salaar_poster.png" HeightRequest="200" />
-                                <Image Source="top_gun_poster.png" HeightRequest="200" />
-                                <Image Source="bullet_train_poster.png" HeightRequest="200" />
-                            </StackLayout>
+                        <StackLayout Orientation="Horizontal" Spacing="5" >
+                            <ImageButton Source="avengers_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="1"/>
+                            <ImageButton Source="batman_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="2"/>
+                            <ImageButton Source="salaar_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="4"/>
+                            <ImageButton Source="top_gun_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="5"/>
+                            <ImageButton Source="bullet_train_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="8"/>
+                        </StackLayout>
                         </ScrollView>
                     </StackLayout>
 
-                </StackLayout>
+                </StackLayout> 
         </ScrollView>
 
         <StackLayout Orientation="Horizontal" 

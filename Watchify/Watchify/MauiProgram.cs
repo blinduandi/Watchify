@@ -46,8 +46,8 @@ namespace Watchify
                 }
             }));
 
-            
 
+            Environment.SetEnvironmentVariable("IP", "172.26.0.123");
 
             return builder.Build();
         }
