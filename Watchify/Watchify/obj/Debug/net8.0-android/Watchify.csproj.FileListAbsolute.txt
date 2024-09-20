@@ -2133,3 +2133,11 @@ D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\stamp\_ConvertRe
 D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 D:\Watchify\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\android\assets\RestSharp.dll
+D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\back_google.png
+D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\back_google_ios.png
+D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\bookmark_google.png
+D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\grade_google.png
+D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\share_google.png
+D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\the_batman.png
+D:\Practica Tehnologica\Watchify\Watchify\Watchify\obj\Debug\net8.0-android\resizetizer\r\drawable\playboi.jpg

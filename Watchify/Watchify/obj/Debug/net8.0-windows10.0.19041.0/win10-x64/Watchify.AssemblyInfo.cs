@@ -11,14 +11,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PackageName", "com.companyname.watchify")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.PublisherName", "User Name")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.Name", "Watchify")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("Microsoft.Maui.ApplicationModel.AppInfo.Version", "1.0.0.1")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Watchify")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+621dc867cf0edfb90933cb132b125aacf726f4b8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e862a0969a9179dbdff61f735673e1e0c7180c54")]
 [assembly: System.Reflection.AssemblyProductAttribute("Watchify")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Watchify")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

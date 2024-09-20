@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Watchify")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+621dc867cf0edfb90933cb132b125aacf726f4b8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+b5353f8728eb6326f8fd50c3938dfa9f4f8c7aeb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Watchify")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Watchify")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
