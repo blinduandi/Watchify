@@ -88,6 +88,10 @@
               "version": "[8.0.8, )",
               "autoReferenced": true
             },
+            "Microsoft.Rest.ClientRuntime": {
+              "target": "Package",
+              "version": "[2.3.24, )"
+            },
             "MvvmHelpers": {
               "target": "Package",
               "version": "[2012.4.20.3, )"
@@ -142,6 +146,10 @@
               "target": "Package",
               "version": "[8.0.8, )",
               "autoReferenced": true
+            },
+            "Microsoft.Rest.ClientRuntime": {
+              "target": "Package",
+              "version": "[2.3.24, )"
             },
             "MvvmHelpers": {
               "target": "Package",
@@ -198,6 +206,10 @@
               "version": "[8.0.8, )",
               "autoReferenced": true
             },
+            "Microsoft.Rest.ClientRuntime": {
+              "target": "Package",
+              "version": "[2.3.24, )"
+            },
             "MvvmHelpers": {
               "target": "Package",
               "version": "[2012.4.20.3, )"
@@ -247,6 +259,10 @@
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
               "version": "[8.0.72, )"
+            },
+            "Microsoft.Rest.ClientRuntime": {
+              "target": "Package",
+              "version": "[2.3.24, )"
             },
             "MvvmHelpers": {
               "target": "Package",

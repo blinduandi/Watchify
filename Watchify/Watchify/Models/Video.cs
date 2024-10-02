@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Watchify.Models
 {
-    public class Video
+    public class Video_Path
     {
         public string ID { get; set; }
-        public int MovieId { get; set; }
+        public int Movie_Id { get; set; }
         public string Name { get; set; }
-        public string VType { get; set; }
+        public string Type { get; set; }
         public string Url { get; set; }
     }
 }

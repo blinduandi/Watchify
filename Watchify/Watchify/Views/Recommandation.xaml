@@ -2,11 +2,42 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Watchify.Views.Recommandation"
-             Title="Recommandation">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Recommendation">
+    <Grid>
+    <AbsoluteLayout>
+        <!-- StackLayout that will hold movie cards stacked on top of each other -->
+        <StackLayout x:Name="cardStack"
+                     VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand"
+                     Padding="0"
+                     Spacing="0" />
+    </AbsoluteLayout>
+        
+        <StackLayout Orientation="Horizontal" 
+             VerticalOptions="End" 
+             HorizontalOptions="FillAndExpand" 
+             HeightRequest="60" 
+             BackgroundColor="black">
+
+            <ImageButton Source="house.png" 
+                 HorizontalOptions="CenterAndExpand" 
+                 VerticalOptions="Center" 
+                 HeightRequest="30" 
+                 WidthRequest="30"
+                 Clicked="HomeRedirect"        
+                         />
+            <ImageButton Source="swipe_google.png" 
+                 HorizontalOptions="CenterAndExpand" 
+                 VerticalOptions="Center" 
+                 HeightRequest="30" 
+                 Clicked="RecomandandionRedirect"
+                 WidthRequest="30"/>
+            <ImageButton Source="bookmark_google.png" 
+                         HorizontalOptions="CenterAndExpand" 
+                         VerticalOptions="Center" 
+                         HeightRequest="30" 
+                         WidthRequest="30"
+                         Clicked="SeeAllWatched"/>
+        </StackLayout>
+    </Grid>
 </ContentPage>

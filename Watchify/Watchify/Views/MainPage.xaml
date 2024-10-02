@@ -13,79 +13,80 @@
             </LinearGradientBrush>
         </Grid.Background>
 
-        <ScrollView VerticalScrollBarVisibility="Never">
-            <StackLayout Padding="12">
+        <ScrollView VerticalScrollBarVisibility="Never" Padding="0,10,0,50">
+            <StackLayout Padding="12" x:Name="MainContent">
+                <!-- Your existing layout code here... -->
+
                 <StackLayout Padding="0,10,0,30" Orientation="Horizontal">
                     <ImageButton Source="acc_circle.png"
-                        HorizontalOptions="StartAndExpand" 
-                        VerticalOptions="Center" 
-                        HeightRequest="30" 
-                        WidthRequest="30"/>
-                    
+                                 HorizontalOptions="StartAndExpand" 
+                                 VerticalOptions="Center" 
+                                 HeightRequest="30" 
+                                 WidthRequest="30"
+                                 Clicked="ProfilePage"/>
+
                     <Label Text=".Watchify" 
-                        FontSize="26" 
-                        FontAttributes="Bold" 
-                        TextColor="White" 
-                        Margin="0,10,0,10"
-                        HorizontalOptions="CenterAndExpand"
-                        VerticalOptions="Center"/>
+                           FontSize="26" 
+                           FontAttributes="Bold" 
+                           TextColor="White" 
+                           Margin="0,10,0,10"
+                           HorizontalOptions="CenterAndExpand"
+                           VerticalOptions="Center"/>
+
                     <ImageButton Source="search_google.png" 
-                        HorizontalOptions="EndAndExpand" 
-                        VerticalOptions="Center" 
-                        HeightRequest="30" 
-                        WidthRequest="30"
-                        Clicked="SearchClick"/>
-                    
+                                 HorizontalOptions="EndAndExpand" 
+                                 VerticalOptions="Center" 
+                                 HeightRequest="30" 
+                                 WidthRequest="30"
+                                 Clicked="SearchClick"/>
                 </StackLayout>
+
                 <AbsoluteLayout>
-                <Frame x:Name="GradientCircle" 
-                       CornerRadius="150" 
-                       HeightRequest="250" 
-                       WidthRequest="250"
-                       HasShadow="False"
-                       VerticalOptions="Start" 
-                       HorizontalOptions="Center"
-                       BackgroundColor="Transparent"
-                       Padding="0"
-                       AbsoluteLayout.LayoutBounds="0.5, 0.3, 300, 320" 
-                       AbsoluteLayout.LayoutFlags="PositionProportional">
+                    <Frame x:Name="GradientCircle" 
+                           CornerRadius="150" 
+                           HeightRequest="250" 
+                           WidthRequest="250"
+                           HasShadow="False"
+                           VerticalOptions="Start" 
+                           HorizontalOptions="Center"
+                           BackgroundColor="Transparent"
+                           Padding="0"
+                           AbsoluteLayout.LayoutBounds="0.5, 0.3, 300, 320" 
+                           AbsoluteLayout.LayoutFlags="PositionProportional">
 
-                    <Frame.Background>
-                        <LinearGradientBrush>
-                            <GradientStop Color="DarkRed" Offset="0.1" />
-                            <GradientStop Color="Red" Offset="0.6" />
-                            <GradientStop Color="Gold" Offset="1.0" />
-                        </LinearGradientBrush>
-                    </Frame.Background>
-                </Frame>
+                        <Frame.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="DarkRed" Offset="0.1" />
+                                <GradientStop Color="Red" Offset="0.6" />
+                                <GradientStop Color="Gold" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Frame.Background>
+                    </Frame>
 
-                <StackLayout AbsoluteLayout.LayoutBounds="0.5, 0.35, AutoSize, AutoSize" 
-                        AbsoluteLayout.LayoutFlags="PositionProportional" 
-                        VerticalOptions="Center"
-                        HorizontalOptions="Center">
+                    <StackLayout AbsoluteLayout.LayoutBounds="0.5, 0.35, AutoSize, AutoSize" 
+                                 AbsoluteLayout.LayoutFlags="PositionProportional" 
+                                 VerticalOptions="Center"
+                                 HorizontalOptions="Center">
 
-                    <Label Text="My Vibe" 
-                        Padding="0,5"
-                        FontSize="26" 
-                        FontAttributes="Bold" 
-                        TextColor="White" 
-                        HorizontalTextAlignment="Center"
-                        VerticalOptions="Center"/>
+                        <Label Text="My Vibe" 
+                               Padding="0,5"
+                               FontSize="26" 
+                               FontAttributes="Bold" 
+                               TextColor="White" 
+                               HorizontalTextAlignment="Center"
+                               VerticalOptions="Center"/>
 
-                    <Button Text="Customize" 
-                        FontAttributes="Bold" 
-                        BackgroundColor="Transparent" 
-                        TextColor="White"
-                        BorderColor="White" 
-                        BorderWidth="1"
-                        CornerRadius="20"
-                        HorizontalOptions="Center"
-                        WidthRequest="150" />
-                </StackLayout>
+                        <Button Text="Customize" 
+                                FontAttributes="Bold" 
+                                BackgroundColor="Transparent" 
+                                TextColor="White"
+                                BorderColor="White" 
+                                BorderWidth="1"
+                                CornerRadius="20"
+                                HorizontalOptions="Center"
+                                WidthRequest="150" />
+                    </StackLayout>
                 </AbsoluteLayout>
-
-
-
                 <StackLayout >
                     <StackLayout Orientation="Horizontal">
                         <Label Text="New Movies" 
@@ -99,15 +100,15 @@
                             Padding="0,0,0,10"
                             FontSize="14" 
                             FontAttributes="Bold" 
-                            TextColor="DarkOrange"/>     
+                            TextColor="DarkOrange">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="SeeAllNew"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+
                     </StackLayout>
-                    <ScrollView Orientation="Horizontal" >
-                        <StackLayout Orientation="Horizontal" Spacing="5" x:Name="StackNew">
-                            <ImageButton Source="avengers_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="1"/>
-                            <ImageButton Source="batman_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="2"/>
-                            <ImageButton Source="salaar_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="4"/>
-                            <ImageButton Source="top_gun_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="5"/>
-                            <ImageButton Source="bullet_train_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="8"/>
+                    <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                        <StackLayout Orientation="Horizontal" x:Name="StackNew" Spacing="20">
                         </StackLayout>
                     </ScrollView>
                 </StackLayout>
@@ -131,22 +132,23 @@
                             Padding="0,0,0,10"
                             FontSize="18" 
                             FontAttributes="Bold" 
-                            TextColor="White"/> 
+                            TextColor="White"/>
+
                         <Label Text="See all" 
                             VerticalTextAlignment="Center"
                             HorizontalOptions="EndAndExpand"
                             Padding="0,0,0,10"
                             FontSize="14" 
                             FontAttributes="Bold" 
-                            TextColor="DarkOrange"/>
+                            TextColor="DarkOrange">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="SeeAllTrending" />
+                            </Label.GestureRecognizers>
+                        </Label>
+
                     </StackLayout>
-                    <ScrollView Orientation="Horizontal" >
-                        <StackLayout Orientation="Horizontal" Spacing="5" x:Name="StackTrending" >
-                            <ImageButton Source="avengers_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="1"/>
-                            <ImageButton Source="batman_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="2"/>
-                            <ImageButton Source="salaar_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="4"/>
-                            <ImageButton Source="top_gun_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="5"/>
-                            <ImageButton Source="bullet_train_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="8"/>
+                    <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                        <StackLayout Orientation="Horizontal" x:Name="StackTrending" Spacing="20">
                         </StackLayout>
                     </ScrollView>
                 </StackLayout>
@@ -154,58 +156,78 @@
 
                 <StackLayout Margin="0,20,0,5">
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="Continue Watching" 
+                        <Label Text="WatchLater" 
                             Padding="0,0,0,10"
                             FontSize="18" 
                             FontAttributes="Bold" 
-                            TextColor="White"/> 
+                            TextColor="White"/>
+
                         <Label Text="See all" 
                             VerticalTextAlignment="Center"
                             HorizontalOptions="EndAndExpand"
                             Padding="0,0,0,10"
                             FontSize="14" 
                             FontAttributes="Bold" 
-                            TextColor="DarkOrange"/>
+                            TextColor="DarkOrange">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="SeeAllWatched" />
+                            </Label.GestureRecognizers>
+                        </Label>
+
                     </StackLayout>
-                    <ScrollView Orientation="Horizontal" >
-                        <StackLayout Orientation="Horizontal" Spacing="5" >
-                            <ImageButton Source="avengers_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="1"/>
-                            <ImageButton Source="batman_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="2"/>
-                            <ImageButton Source="salaar_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="4"/>
-                            <ImageButton Source="top_gun_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="5"/>
-                            <ImageButton Source="bullet_train_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="8"/>
+                    <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                        <StackLayout Orientation="Horizontal" x:Name="StackWatch" Spacing="20">
                         </StackLayout>
                     </ScrollView>
                 </StackLayout>
-               
-                    <StackLayout Margin="0,20,0,5">
-                        <StackLayout Orientation="Horizontal">
-                        <Label Text="Watch Later" 
-                                Padding="0,0,0,10"
-                                FontSize="18" 
-                                FontAttributes="Bold" 
-                                TextColor="White"/>
-                        <Label Text="See all" 
-                                VerticalTextAlignment="Center"
-                                HorizontalOptions="EndAndExpand"
-                                Padding="0,0,0,10"
-                                FontSize="14" 
-                                FontAttributes="Bold" 
-                                TextColor="DarkOrange"/>
-                        </StackLayout>
-                        <ScrollView Orientation="Horizontal" >
-                        <StackLayout Orientation="Horizontal" Spacing="5" >
-                            <ImageButton Source="avengers_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="1"/>
-                            <ImageButton Source="batman_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="2"/>
-                            <ImageButton Source="salaar_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="4"/>
-                            <ImageButton Source="top_gun_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="5"/>
-                            <ImageButton Source="bullet_train_poster.png" HeightRequest="200" WidthRequest="140" Clicked="MoviePageRedirect" BindingContext="8"/>
-                        </StackLayout>
-                        </ScrollView>
-                    </StackLayout>
 
-                </StackLayout> 
+                <StackLayout Margin="0,20,0,5">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Liked" 
+                            Padding="0,0,0,10"
+                            FontSize="18" 
+                            FontAttributes="Bold" 
+                            TextColor="White"/>
+
+                        <Label Text="See all" 
+                            VerticalTextAlignment="Center"
+                            HorizontalOptions="EndAndExpand"
+                            Padding="0,0,0,10"
+                            FontSize="14" 
+                            FontAttributes="Bold" 
+                            TextColor="DarkOrange">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="SeeAllLiked" />
+                            </Label.GestureRecognizers>
+                        </Label>
+
+                    </StackLayout>
+                    <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                        <StackLayout Orientation="Horizontal" x:Name="StackLiked" Spacing="20">
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
+            </StackLayout>
         </ScrollView>
+
+        <Grid x:Name="LoadingScreen" 
+              IsVisible="False" 
+              BackgroundColor="Black" 
+              Opacity="0.8" 
+              VerticalOptions="FillAndExpand" 
+              HorizontalOptions="FillAndExpand">
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="1,1" EndPoint="0,0">
+                    <GradientStop Color="Black" Offset="0.4" />
+                    <GradientStop Color="Red" Offset="1.0" />
+                </LinearGradientBrush>
+            </Grid.Background>
+
+            <ActivityIndicator IsRunning="True" 
+                               VerticalOptions="Center" 
+                               HorizontalOptions="Center" 
+                               Color="White"/>
+        </Grid>
 
         <StackLayout Orientation="Horizontal" 
                      VerticalOptions="End" 
@@ -217,17 +239,20 @@
                          HorizontalOptions="CenterAndExpand" 
                          VerticalOptions="Center" 
                          HeightRequest="30" 
-                         WidthRequest="30"/>
+                         WidthRequest="30"
+                         Clicked="HomeRedirect"/>
             <ImageButton Source="swipe_google.png" 
                          HorizontalOptions="CenterAndExpand" 
                          VerticalOptions="Center" 
                          HeightRequest="30" 
-                         WidthRequest="30"/>
-            <ImageButton Source="manage_acc.png" 
+                         WidthRequest="30"
+                         Clicked="RecomandandionRedirect"/>
+            <ImageButton Source="bookmark_google.png" 
                          HorizontalOptions="CenterAndExpand" 
                          VerticalOptions="Center" 
                          HeightRequest="30" 
-                         WidthRequest="30"/>
+                         WidthRequest="30"
+                         Clicked="SeeAllWatched"/>
         </StackLayout>
 
     </Grid>

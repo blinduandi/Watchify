@@ -3,6 +3,7 @@ using Firebase.Auth.Providers;
 using Microsoft.Extensions.Logging;
 using Watchify.Features.SignUp;
 using Watchify.Pages;
+using Watchify.Views;
 //using UIKit;
 
 namespace Watchify
@@ -46,8 +47,13 @@ namespace Watchify
                 }
             }));
 
+            builder.Services.AddSingleton<MainPage>();
+           // builder.Services.AddSingleton<MoviePage>();
+           // builder.Services.AddSingleton<SearchPage>();
+            builder.Services.AddTransient<SearchPage>();
+            builder.Services.AddTransient<MoviePage>();
 
-            Environment.SetEnvironmentVariable("IP", "172.26.0.123");
+            Environment.SetEnvironmentVariable("IP", "172.20.10.14");
 
             return builder.Build();
         }

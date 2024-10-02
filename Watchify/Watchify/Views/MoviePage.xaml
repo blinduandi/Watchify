@@ -3,10 +3,197 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Watchify.Views.MoviePage"
              Title="MoviePage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid BackgroundColor="black">
+
+        <!-- Movie Poster -->
+        <Image x:Name="MoviePoster"
+               Source="the_batman.jpg"
+               Aspect="AspectFill"
+               Opacity="1"
+               VerticalOptions="Start"
+               HorizontalOptions="FillAndExpand" />
+        
+        <BoxView VerticalOptions="FillAndExpand"
+     HorizontalOptions="FillAndExpand">
+            <BoxView.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="Transparent" Offset="0.1" />
+                    <GradientStop Color="Black" Offset="1.0" />
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
+
+        <!-- Go Back Button -->
+        <ImageButton x:Name="GoBackButton"
+                     Source="back_google_ios.png"
+                     VerticalOptions="Start"
+                     HorizontalOptions="Start"
+                     HeightRequest="50"
+                     WidthRequest="50"
+                     Padding="10"
+                     Margin="5"
+                     ZIndex="10"
+                     Clicked="GoBackHome" />
+
+        <ScrollView Scrolled="OnScrollViewScrolled" VerticalScrollBarVisibility="Never" Padding="10">
+            <StackLayout>
+
+                <!-- Movie Title -->
+                <StackLayout>
+                    <Label x:Name="MovieTitleLabel"
+                           Text="The Batman" 
+                           FontSize="30"
+                           FontAttributes="Bold"
+                           Padding="0,300,0,30"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HorizontalTextAlignment="Center"/>
+
+                    <!-- Rating and Genre Info -->
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="5">
+                        <Label x:Name="MovieRatingLabel"
+                               Text="8.2" 
+                               FontSize="16"
+                               TextColor="Gold"
+                               FontAttributes="None"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"/>
+                        <Label x:Name="MovieGenreLabel"
+                               Text="2014, Fantastic, Action" 
+                               FontSize="16"
+                               FontAttributes="None"
+                               Padding="0,0,0,0"
+                               HorizontalOptions="Center" VerticalOptions="Center"/>
+                    </StackLayout>
+
+                    <!-- Movie Runtime and Country -->
+                    <Label x:Name="MovieRuntimeLabel"
+                           Text="USA, 2 h 45 min, 18+" 
+                           FontSize="16"
+                           FontAttributes="None"
+                           Padding="0,0,0,0"
+                           HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="0,20" >
+                    <ImageButton Source="heart_regular.png" WidthRequest="40" HeightRequest="40" x:Name="LikeBtn" Clicked="likeButton"></ImageButton>
+                    <ImageButton Source="bookmark_regular.png" WidthRequest="40" HeightRequest="40" Clicked="watchLater" x:Name="watchBtn"></ImageButton>
+                    
+                </StackLayout>
+
+                <!-- Movie Overview -->
+                <StackLayout>
+                    <Label x:Name="MovieOverviewLabel"
+                           FontSize="16">The Batman is a 2022 American superhero film based on the DC Comics character Batman. Directed by Matt Reeves from a screenplay...</Label>
+                    <Button Text="See all details" 
+                            Padding="0,10,0,10"
+                            FontSize="16" 
+                            FontAttributes="Bold" 
+                            TextColor="DarkOrange" 
+                            BackgroundColor="Transparent"
+                            HorizontalOptions="Start"/>
+                </StackLayout>
+
+                <!-- Trailer Section -->
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" Padding="0,20,0,0">
+                        <Label Text="Trailer" 
+                               Padding="0,0,0,10"
+                               FontSize="20" 
+                               FontAttributes="Bold" 
+                               TextColor="White"/>
+                        <Label Text="See all" 
+                               VerticalTextAlignment="Center"
+                               HorizontalOptions="EndAndExpand"
+                               Padding="0,0,0,10"
+                               FontSize="14" 
+                               FontAttributes="Bold" 
+                               TextColor="DarkOrange"/>
+                    </StackLayout>
+                    <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                        <StackLayout Orientation="Horizontal" Spacing="10" Padding="0,0,0,40" x:Name="TrailerStack">
+                            <!--<WebView x:Name="YouTubeWebView"
+                                     Source="https://www.youtube.com/embed/mqqft2x_Aa4"
+                                     WidthRequest="340"
+                                     HeightRequest="200"
+                                     HorizontalOptions="CenterAndExpand"
+                                     VerticalOptions="CenterAndExpand" /> -->
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
+
+                <!-- Ratings Section -->
+                <StackLayout Padding="0,0,0,40">
+                    <Label Text="Ratings" 
+                           Padding="0,0,0,10"
+                           FontSize="20" 
+                           FontAttributes="Bold" 
+                           TextColor="White"/>
+                    <StackLayout BackgroundColor="#1f1f1f" Orientation="Vertical" >
+                        <Label x:Name="MovieRatingLargeLabel"
+                               TextColor="#63f022" 
+                               FontSize="60" 
+                               FontAttributes="Bold" 
+                               Margin="0,20,0,10" 
+                               HorizontalOptions="Center">8.2</Label>
+                        <Label TextColor="Gray" 
+                               FontSize="16" 
+                               FontAttributes="None" 
+                               x:Name="MovieNumberReviews"
+                               HorizontalOptions="Center">512 836 reviews</Label>
+                        <Button Text="Rate this movie" 
+                                TextColor="White" 
+                                BackgroundColor="Red" 
+                                CornerRadius="20" 
+                                WidthRequest="160" 
+                                Margin="0,20" 
+                                FontSize="16"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <!-- Recommendations Section -->
+                <StackLayout Margin="0,0,0,20" Padding="0,0,0,40">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Similar Movies" 
+                               Padding="0,0,0,10"
+                               FontSize="20" 
+                               FontAttributes="Bold" 
+                               TextColor="White"/>
+                    </StackLayout>
+
+                    <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                        <StackLayout Orientation="Horizontal" Spacing="10" x:Name="stackSimilar">
+                        </StackLayout>
+                    </ScrollView>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+
+        <!-- Bottom Navigation -->
+        <StackLayout Orientation="Horizontal" 
+                     VerticalOptions="End" 
+                     HorizontalOptions="FillAndExpand" 
+                     HeightRequest="60" 
+                     BackgroundColor="black">
+
+            <ImageButton Source="house.png" 
+                         HorizontalOptions="CenterAndExpand" 
+                         VerticalOptions="Center" 
+                         HeightRequest="30" 
+                         WidthRequest="30"
+                         Clicked="HomeRedirect"/>
+            <ImageButton Source="swipe_google.png" 
+                         HorizontalOptions="CenterAndExpand" 
+                         VerticalOptions="Center" 
+                         HeightRequest="30" 
+                         WidthRequest="30"/>
+            <ImageButton Source="bookmark_google.png" 
+                         HorizontalOptions="CenterAndExpand" 
+                         VerticalOptions="Center" 
+                         HeightRequest="30" 
+                         WidthRequest="30"
+                         Clicked="SeeAllWatched"/>
+        </StackLayout>
+    </Grid>
 </ContentPage>

@@ -20,6 +20,7 @@ public class MonoPackageManager_Resources {
 		"Microsoft.Maui.dll",
 		"Microsoft.Maui.Essentials.dll",
 		"Microsoft.Maui.Graphics.dll",
+		"Microsoft.Rest.ClientRuntime.dll",
 		"JulMar.Wpf.Helpers.dll",
 		"Julmar.Core.dll",
 		"Julmar.Wpf.Behaviors.dll",

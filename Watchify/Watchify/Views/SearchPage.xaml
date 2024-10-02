@@ -2,114 +2,130 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
-
              x:Class="Watchify.Views.SearchPage"
              Title="SearchPage">
 
     <Grid BackgroundColor="black">
-        <Grid.Background>
-            <LinearGradientBrush StartPoint="0,1" EndPoint="0,0">
-                <GradientStop Color="Black" Offset="0.5" />
-                <GradientStop Color="DarkRed" Offset="1.0" />
-            </LinearGradientBrush>
-        </Grid.Background>
+        
 
-
-
-        <ScrollView VerticalScrollBarVisibility="Never">
-            <StackLayout Padding="10,10,10,100">
-                <StackLayout Orientation="Horizontal" Padding="0,5,10,10">
-                    <ImageButton Source="back_google.png" HeightRequest="30" WidthRequest="30"/>
-                    <Entry x:Name="entry"
+        <StackLayout Orientation="Horizontal" 
+                     VerticalOptions="Start" 
+                     HeightRequest="70" 
+                     BackgroundColor="black"
+                     ZIndex="10"
+                     Margin="0,0,0,10">
+            <StackLayout Orientation="Horizontal" Padding="10,10,10,10">
+                <ImageButton Source="back_google.png" HeightRequest="30" WidthRequest="30" Clicked="BackHome"/>
+                <Entry x:Name="entry"
                     Placeholder="Movies, Genres, Actors, Moment..."
                     Keyboard="Chat"
-                    ClearButtonVisibility="WhileEditing" 
-                    HorizontalOptions="FillAndExpand"/>
+                       WidthRequest="350"
+                    Margin="5,0"
+                    ClearButtonVisibility="WhileEditing"
+                    TextChanged="OnEntryTextChanged"
+   
+                       />
+            </StackLayout>
+        </StackLayout>
+
+<!--  cautarile -->
+        <ScrollView VerticalScrollBarVisibility="Never">
+            <StackLayout Padding="10,10,10,100">
+                <!-- Dynamically populated movie items will go here -->
+                <StackLayout x:Name="ResultsStack" Spacing="20" Margin="0,75,0,20">
+                    
+                </StackLayout>
+
+                <Button x:Name="LoadMoreBtn" Text="Load More" TextColor="White" BackgroundColor="Red" CornerRadius="20" WidthRequest="160" Margin="0,10,0,30" FontSize="16" Clicked="LoadMore"/>
+
+                <!--  pana aici sunt cautarile-->
+
+
+                <StackLayout Margin="0,20,0,5">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Trending" 
+                            Padding="0,0,0,10"
+                            FontSize="18" 
+                            FontAttributes="Bold" 
+                            TextColor="White"/>
+
+                
+
+                    </StackLayout>
+                    <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                        <StackLayout Orientation="Horizontal" x:Name="StackTrending" Spacing="20">
+                        </StackLayout>
+                    </ScrollView>
                 </StackLayout>
 
 
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Categories" FontSize="20" FontAttributes="Bold" Padding="0,10,0,10"/>
+                    <StackLayout Orientation="Horizontal" Spacing="5" Padding="0,5">
+                        <Button Text="Genres" 
+                                BackgroundColor="#444444" 
+                                TextColor="White" 
+                                FontAttributes="Bold" FontSize="18"
+                                CornerRadius="25" Margin="0,0,5,0" Padding="30,0"
+                                HeightRequest="50" />
+                        <Button Text="Online - Cinema" 
+                                BackgroundColor="#444444" 
+                                TextColor="White" 
+                                FontAttributes="Bold" FontSize="18"
+                                CornerRadius="25" Margin="0,0,5,0" Padding="30,0"
+                                HeightRequest="50" />
+                    </StackLayout>
 
-                <StackLayout>
-                    <Label Text="Browse by" 
-                       FontSize="18" 
-                       FontAttributes="Bold" 
-                       TextColor="White" 
-                       Margin="0,10,0,10"
-                       FontFamily="SuseBold"/>
-                </StackLayout>
+                    <StackLayout Orientation="Horizontal" Spacing="5" Padding="0,5">
+                        <Button Text="Year" 
+                                BackgroundColor="#444444" 
+                                TextColor="White" 
+                                FontAttributes="Bold" FontSize="18"
+                                CornerRadius="25" Margin="0,0,5,0" Padding="30,0"
+                                HeightRequest="50" />
+                        <Button Text="Actors" 
+                                BackgroundColor="#444444" 
+                                TextColor="White" 
+                                FontAttributes="Bold" FontSize="18"
+                                CornerRadius="25" Margin="0,0,5,0" Padding="30,0"
+                                HeightRequest="50" />
+                    </StackLayout>
 
-                <Grid ColumnSpacing="10" RowSpacing="10" Margin="0,10,0,10">
+                    <StackLayout Orientation="Horizontal" Spacing="5" Padding="0,5">
+                        <Button Text="Country" 
+                                BackgroundColor="#444444" 
+                                TextColor="White" 
+                                FontAttributes="Bold" FontSize="18"
+                                CornerRadius="25" Margin="0,0,5,0" Padding="30,0"
+                                HeightRequest="50" />
+                        <Button Text="Duration" 
+                                BackgroundColor="#444444" 
+                                TextColor="White" 
+                                FontAttributes="Bold" FontSize="18"
+                                CornerRadius="25" Margin="0,0,5,0" Padding="30,0"
+                                HeightRequest="50" />
+                    </StackLayout>
 
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Button Text="Genres" 
-                        BackgroundColor="#444444" 
-                        TextColor="White" 
-                        FontAttributes="Bold"
-                        Grid.Row="0" Grid.Column="0"
-                        CornerRadius="15" HeightRequest="50"/>
-                    <Button Text="Rating" 
-                        BackgroundColor="#444444" 
-                        TextColor="White" 
-                        FontAttributes="Bold"
-                        Grid.Row="0" Grid.Column="1"
-                        CornerRadius="15" HeightRequest="50"/>
-                    <Button Text="Country" 
-                        BackgroundColor="#444444" 
-                        TextColor="White" 
-                        FontAttributes="Bold"
-                        Grid.Row="0" Grid.Column="2"
-                        CornerRadius="15" HeightRequest="50"/>
-
-                    <Button Text="Popular" 
-                        BackgroundColor="#444444" 
-                        TextColor="White" 
-                        FontAttributes="Bold"
-                        Grid.Row="1" Grid.Column="0"
-                        CornerRadius="15" HeightRequest="50"/>
-                    <Button Text="Years" 
-                        BackgroundColor="#444444" 
-                        TextColor="White" 
-                        FontAttributes="Bold"
-                        Grid.Row="1" Grid.Column="1"
-                        CornerRadius="15" HeightRequest="50"/>
-                    <Button Text="Actors" 
-                        BackgroundColor="#444444" 
-                        TextColor="White" 
-                        FontAttributes="Bold"
-                        Grid.Row="1" Grid.Column="2"
-                        CornerRadius="15" HeightRequest="50"/>
-                </Grid>
-
-                <StackLayout Margin="0,20,0,0">
-                    <Label Text="Most Anticipated" 
-                   FontSize="18" 
-                   FontAttributes="Bold" 
-                   TextColor="White" 
-                   Margin="0,10,0,0"/>
-                    <Label Text="New Releases" 
-                   FontSize="18" 
-                   FontAttributes="Bold" 
-                   TextColor="White" 
-                   Margin="0,20,0,0"/>
-                    <Label Text="Journal" 
-                   FontSize="18" 
-                   FontAttributes="Bold" 
-                   TextColor="White" 
-                   Margin="0,20,0,0"/>
+                    <StackLayout Orientation="Horizontal" Spacing="5" Padding="0,5">
+                        <Button Text="Critics" 
+                                BackgroundColor="#444444" 
+                                TextColor="White" 
+                                FontAttributes="Bold" FontSize="18"
+                                CornerRadius="25" Margin="0,0,5,0" Padding="30,0"
+                                HeightRequest="50" />
+                        <Button Text="Rating" 
+                                BackgroundColor="#444444" 
+                                TextColor="White" 
+                                FontAttributes="Bold" FontSize="18"
+                                CornerRadius="25" Margin="0,0,5,0" Padding="30,0"
+                                HeightRequest="50" />
+                    </StackLayout>
                 </StackLayout>
 
             </StackLayout>
         </ScrollView>
+        
+        
         <StackLayout Orientation="Horizontal" 
              VerticalOptions="End" 
              HorizontalOptions="FillAndExpand" 
@@ -120,17 +136,21 @@
                  HorizontalOptions="CenterAndExpand" 
                  VerticalOptions="Center" 
                  HeightRequest="30" 
-                 WidthRequest="30"/>
+                 WidthRequest="30"
+                 Clicked="HomeRedirect"        
+                         />
             <ImageButton Source="swipe_google.png" 
                  HorizontalOptions="CenterAndExpand" 
                  VerticalOptions="Center" 
                  HeightRequest="30" 
-                 WidthRequest="30"/>
-            <ImageButton Source="manage_acc.png" 
-                 HorizontalOptions="CenterAndExpand" 
-                 VerticalOptions="Center" 
-                 HeightRequest="30" 
-                 WidthRequest="30"/>
+                 WidthRequest="30"
+                 Clicked="RecomandandionRedirect"/>
+            <ImageButton Source="bookmark_google.png" 
+                         HorizontalOptions="CenterAndExpand" 
+                         VerticalOptions="Center" 
+                         HeightRequest="30" 
+                         WidthRequest="30"
+                         Clicked="SeeAllWatched"/>
         </StackLayout>
     </Grid>
 </ContentPage>

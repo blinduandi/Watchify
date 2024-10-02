@@ -1,4 +1,6 @@
 using Firebase.Auth;
+using System.Security.Cryptography;
+using System.Text;
 
 
 namespace Watchify.Views;
@@ -41,6 +43,17 @@ public partial class LoginPage : ContentPage
     //    return _authClient.SignInWithGoogle();
     //}
 
+    public static int GetUserIdAsInteger(string userId)
+    {
+        using (var sha256 = SHA256.Create())
+        {
+            var bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(userId));
+
+            int hashValue = BitConverter.ToInt32(bytes, 0);
+
+            return Math.Abs(hashValue);
+        }
+    }
 
     private async void OnLoginButtonClicked(object sender, EventArgs e)
     {
@@ -60,6 +73,7 @@ public partial class LoginPage : ContentPage
 
             // Save login state
             await SecureStorage.SetAsync("userLoggedIn", "true");
+            await SecureStorage.SetAsync("UserID", GetUserIdAsInteger(userCredential.User.Uid).ToString());
 
             await DisplayAlert("Success", "Successfully signed in!", "Ok");
             await Shell.Current.GoToAsync("///main");

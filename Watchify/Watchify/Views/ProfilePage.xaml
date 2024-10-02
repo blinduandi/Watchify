@@ -3,10 +3,66 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Watchify.Views.ProfilePage"
              Title="ProfilePage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid BackgroundColor="black">
+        <StackLayout Orientation="Horizontal" 
+             VerticalOptions="Start"                      
+             HeightRequest="60" 
+             BackgroundColor="Black"
+             ZIndex="10"
+             Margin="0,0,0,10">
+            <ImageButton Margin="10" Source="back_google.png" HeightRequest="30" WidthRequest="30" Clicked="ToHome" HorizontalOptions="StartAndExpand"  />
+            <Label FontSize="24" HorizontalOptions="CenterAndExpand"  VerticalOptions="Center" MaximumWidthRequest="200" HorizontalTextAlignment="Center">Profile</Label>
+            <ImageButton Margin="10" Source="logout_google.png" HeightRequest="30" WidthRequest="30" NavigationPage.BackButtonTitle="back" HorizontalOptions="EndAndExpand" Clicked="LogOut" />
+        </StackLayout>
+
+        <Grid ZIndex="0">
+            <!-- Background Image -->
+
+            <!-- Overlayed StackLayout -->
+            <StackLayout Orientation="Horizontal"
+                         VerticalOptions="Start"
+                         HorizontalOptions="Start"
+                         Padding="25,100,0,0">
+                <!-- Circle Image positioned on top of the background -->
+                <Image Source="acc_circle.png" 
+                       HeightRequest="50"
+                       WidthRequest="50"
+                       VerticalOptions="Center" />
+                <StackLayout Orientation="Vertical" Padding="10,0,0,0" VerticalOptions="Center">
+                    <Label Text="Mihai Caraman" FontSize="24" />
+                    <Label Text="caramisca@gmail.com"/>
+                </StackLayout>
+
+
+            </StackLayout>
+        </Grid>
+
+        <StackLayout Orientation="Horizontal" 
+                     VerticalOptions="End" 
+                     HorizontalOptions="FillAndExpand" 
+                     HeightRequest="60" 
+                     BackgroundColor="black">
+
+            <ImageButton Source="house.png" 
+                         HorizontalOptions="CenterAndExpand" 
+                         VerticalOptions="Center" 
+                         HeightRequest="30" 
+                         WidthRequest="30"
+                         Clicked="HomeRedirect"/>
+            <ImageButton Source="swipe_google.png" 
+                         HorizontalOptions="CenterAndExpand" 
+                         VerticalOptions="Center" 
+                         HeightRequest="30" 
+                         WidthRequest="30"
+                         Clicked="RecomandandionRedirect"/>
+            <ImageButton Source="bookmark_google.png" 
+                         HorizontalOptions="CenterAndExpand" 
+                         VerticalOptions="Center" 
+                         HeightRequest="30" 
+                         WidthRequest="30"
+                         Clicked="SeeAllWatched"/>
+        </StackLayout>
+    </Grid>
+
+
 </ContentPage>
