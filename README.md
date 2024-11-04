@@ -86,7 +86,7 @@ The backend API provides several endpoints to support the app’s functionality.
 - **Get Movie Details**: `GET /movies/{id}`
 - **Search Movies**: `GET /movies/search?q={query}`
 
-For detailed documentation, refer to the [API documentation](api/README.md).
+For detailed documentation, refer to the [API documentation]([api/README.md](https://github.com/Darzu-Catalin/watchify-api)).
 
 ## Contributing
 
